@@ -243,6 +243,7 @@ input, select, textarea {
 		text-align: right;
 	}
 
+
 /* Container */
 
 	.container {
@@ -2595,11 +2596,11 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background-color: #1f1815;
-		background-attachment: scroll,								scroll;
+		background-attachment: scroll, scroll;
 		background-image: url("images/overlay.png"), url("../../images/fluid-background.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
+		background-position: top left, top left;
+		background-repeat: repeat, no-repeat;
+		background-size: contain, 150%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
@@ -2687,7 +2688,7 @@ input, select, textarea {
 	#main {
 		margin-left: 35%;
 		max-width: 54em;
-		padding: 8em 4em 4em 4em;
+		padding: 8em 0em 4em 4em;
 		width: calc(100% - 35%);
 	}
 
@@ -2701,6 +2702,10 @@ input, select, textarea {
 				border-top: 0;
 				margin-top: 0;
 				padding-top: 0;
+			}
+
+			#main > section:nth-child(2) {
+				margin-bottom: -3rem;
 			}
 
 /* Poptrox */
@@ -3082,9 +3087,9 @@ input, select, textarea {
 				background-attachment: scroll;
 				background-color: #1f1815;
 				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-				background-position: top left,						bottom center;
-				background-repeat: repeat,							no-repeat;
-				background-size: auto,							cover;
+				background-position: top left, bottom center;
+				background-repeat: repeat, no-repeat;
+				background-size: auto, cover;
 				bottom: auto;
 				left: auto;
 				padding: 4em 4em 6em 4em;
@@ -3093,21 +3098,21 @@ input, select, textarea {
 				width: 100%;
 			}
 
-				#footer .icons {
-					margin: 0 0 1em 0;
-				}
+			#footer .icons {
+				margin: 0 0 1em 0;
+			}
 
-				#footer .copyright {
-					margin: 0 0 1em 0;
-				}
+			#footer .copyright {
+				margin: 0 0 1em 0;
+			}
 
-					#footer .copyright li {
-						border-left-width: 1px;
-						display: inline-block;
-						line-height: 1em;
-						margin-left: 0.75em;
-						padding-left: 0.75em;
-					}
+			#footer .copyright li {
+				border-left-width: 1px;
+				display: inline-block;
+				line-height: 1em;
+				margin-left: 0.75em;
+				padding-left: 0.75em;
+			}
 
 		/* Main */
 
@@ -3204,12 +3209,12 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 4.5em 1.5em;
+				padding: 5em 1.5em;
 			}
 
-				#header h1 br {
-					display: none;
-				}
+			#header h1 br {
+				display: none;
+			}
 
 		/* Footer */
 

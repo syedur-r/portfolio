@@ -6,6 +6,20 @@
 
 (function($) {
 
+	// // // adds the transition when the page loads
+	$(document).ready(function() {
+		$(".transitions").hide();
+		chainAnim($('.transitions'), 'slow', 1);
+
+		function chainAnim(e, s, o) {
+			e = $.makeArray(e);
+			if(e.length == 0) return;
+			$(e.shift()).fadeTo(s, o, function() {
+			  chainAnim(e, s, o);
+			});
+		  }
+	});
+
 	var $window = $(window),
 		$body = $('body'),
 		$header = $('#header'),
