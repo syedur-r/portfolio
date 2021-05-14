@@ -39,6 +39,11 @@ ol, ul {
 	list-style: none;
 }
 
+.image.avatar {	
+	pointer-events: none;
+	user-select: none;
+}
+
 blockquote, q {
 	quotes: none;
 }

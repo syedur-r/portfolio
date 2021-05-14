@@ -9,7 +9,14 @@
 		<title>Syedur's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" /> <!-- CSS Stylsheet -->
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js" defer></script>
+		<script src="assets/js/jquery.poptrox.min.js" defer></script>
+		<script src="assets/js/browser.min.js" defer></script>
+		<script src="assets/js/breakpoints.min.js" defer></script>
+		<script src="assets/js/util.js" defer></script>
+		<script src="assets/js/main.js" defer></script>
 	</head>
 	<body class="is-preload">
 
@@ -29,7 +36,7 @@
 						<header class="major">
 							<h2>About Me</h2>
 						</header>
-						<p>I’m a second-year student at Goldsmiths University of London pursuing a degree in Computer Science. I enjoy creating websites and applications, and aspire towards a career in software engineering. My goal is to build products that technology solutions and optimised experiences.
+						<p>I’m a second-year student at Goldsmiths University of London pursuing a degree in Computer Science. I enjoy creating websites and applications, and aspire towards a career in software engineering. My goal is to build products that provides technology solutions and optimised experiences.
 							<br>Here are a few projects I’ve worked on:</p>
 						<ul class="actions">
 							<li><a href="#projects" class="button">Check out my work</a></li> <li><li><a href="Final CV.pdf" class="btnCV button icon solid fa-download">Download my CV</a></li></li>
@@ -39,29 +46,103 @@
 				<!-- Projects -->
 					<section id="projects">
 						<h2>My Projects</h2>
+						<!-- First thumbnail -->
 						<div class="row">
 							<article class="col-10 col-12-large work-item">
-								<a href="http://doc.gold.ac.uk/~mrahm024/published/index.html" class="image fit thumb"><img src="images/thumbs/student-traveller-thumbnail.png" alt="" /></a>
-								<h3>Student Traveller</h3>
-								<p>Developed a responsive website called Student Traveller, a blog which provides students with an insight to travel destinations in Asia and Europe.</p>
+								<a href="https://github.com/syedur-r/Agile-Saver" target=”_blank” class="image fit thumb"><img src="images/thumbs/agile-saver.png" alt="" /></a>
+								<h3>Agile Saver</h3>
+								<p>
+									Developed a personal budgeting android application alongside a group of 6 other programmers, as a second-year group project. 
+									The app helps users keep track of their expenses, learns their spending patterns using machine learning, and recommends 
+									deviations to help them save money for the long term, as well as have some form of disposable income towards the end of the month.
+								</p>
 							</article>
 						</div>
+
+						<!-- First row -->
 						<div class="row">
 							<article class="col-4 col-12-xsmall work-item">
-								<a href="http://doc.gold.ac.uk/~mrahm024/draw.gold/index.html" class="image fit thumb"><img src="images/thumbs/draw-gold-thumbnail-2.png" alt="" /></a>
+								<a href="https://github.com/syedur-r/To-Do-App" target=”_blank” class="image fit thumb"><img src="images/thumbs/to-do-list.png" alt="" /></a>
+								<h3>To-Do List</h3>
+								<p>
+									Developed a To-Do List application using Java, specifically the java swing library, to allow users to keep track of their tasks
+									or upcoming deadlines. The app is connected to a backend SQLite database, allowing the user to persistently view their To-Do tasks,
+									as well as perform CRUD operations.
+								</p>
+
+							</article>
+							<article class="col-4 col-12-xsmall work-item">
+								<a href="http://doc.gold.ac.uk/usr/474/" target=”_blank” class="image fit thumb"><img src="images/thumbs/calorie-counter.png" alt="" /></a>
+								<h3>Calorie Buddy</h3>
+								<p>
+									Developed a digital calorie counter web application using the M.E.N stack, to help users manage their diet.
+									Essentially the food data is retrieved from a backend database, allowing users to perform CRUD operations, calculate and display
+									their total macros of selected food items.
+								</p>
+							</article>
+							<article class="col-4 col-12-xsmall work-item">
+								<a href="https://github.com/syedur-r/weather-app" target=”_blank” class="image fit thumb"><img src="images/thumbs/weather-app.png" alt="" /></a>
+								<h3>Live Weather</h3>
+								<p>
+									Developed a weather app using HTML CSS, JavaScript, and the OpenWeatherMap API. The purpose of the app is to display weather 
+									forecast information of different cities in real time using a search form. The API data is retrieved in the form of JSON, 
+									and then destructured using an array of objects.
+								</p>
+							</article>
+
+							
+						<!-- Second row -->	
+						<div class="row">
+							<article class="col-4 col-12-xsmall work-item">
+								<a href="https://syedur-r.github.io/draw.gold/" target=”_blank” class="image fit thumb"><img src="images/thumbs/draw-gold-thumbnail-2.png" alt="" /></a>
 								<h3>Draw.Gold</h3>
-								<p>Developed a drawing application that lets you create artistic drawings on the canvas using various tools e.g. the shape tool, pen tool, brush tool, 
-									free hand shape, paint bucket, spirograph, and even uploading images onto the canvas to edit.</p>
+								<p>
+									Developed a drawing application that lets users create artistic drawings on the canvas using various tools e.g. the shape tool, 
+									pen tool, brush tool, free hand shape tool, paint bucket tool, spirograph tool, and even uploading images onto the canvas to edit.
+								</p>
 							</article>
 							<article class="col-4 col-12-xsmall work-item">
-								<a href="http://doc.gold.ac.uk/~mrahm024/game-project/index.html" class="image fit thumb"><img src="images/thumbs/game-project-thumbnail.png" alt="" /></a>
-								<h3>Game Project</h3>
-								<p>Developed 2D platform game using P5.js. The game requires you to reach the end of the platform without falling down the tunnel or getting eaten by the enemies.</p>
+								<a href="https://syedur-r.github.io/student-traveller/" target=”_blank” class="image fit thumb"><img src="images/thumbs/student-traveller-thumbnail.png" alt="" /></a>
+								<h3>Student Traveller</h3>
+								<p>
+									Developed a responsive website called Student Traveller, a blog which provides students with an insight to travel destinations in Asia and Europe.
+									The website was developed using HTML, CSS, JavaScript and BootStrap.
+								</p>
 							</article>
 							<article class="col-4 col-12-xsmall work-item">
-								<a href="https://github.com/syedur-r/Scary-Maze-Game/tree/main/Maze/Maze" class="image fit thumb"><img src="images/thumbs/scary-maze-thumbnail.png" alt="" /></a>
+								<a href="https://syedur-r.github.io/platform-game/" target=”_blank” class="image fit thumb"><img src="images/thumbs/game-project-thumbnail.png" alt="" /></a>
+								<h3>Platform Game</h3>
+								<p>
+									Developed a 2D platform game using P5.js. The game requires the player to reach the end of the platform without falling down the tunnel or getting eaten by the enemies.
+									The player has only three lives. If they use up all three lives, the game will be over.
+								</p>
+							</article>
+
+
+							<!-- Third row -->
+							<article class="col-4 col-12-xsmall work-item">
+								<a href="https://github.com/syedur-r/Sultan-Turkish-Cuisine/tree/master/Sultan%20Turkish%20Cuisine" target=”_blank” class="image fit thumb"><img src="images/thumbs/sultanApp.png" alt="" /></a>
+								<h3>Sultan Turkish Cuisine</h3>
+								<p>
+									Developed an ordering till system for waiters. The purpose of the till system is to allow waiters to efficiently take customer orders, and easily calculate the 
+									total bill with a button click. The till system also uses a login system, allowing waiters to process orders under their name.
+								</p>
+							</article>
+							<article class="col-4 col-12-xsmall work-item">
+								<a href="https://github.com/syedur-r/Safeguarding-Database-Application" target=”_blank” class="image fit thumb"><img src="images/thumbs/safeguarding-database.png" alt="" /></a>
+								<h3>Safeguarding Database</h3>
+								<p>
+									Developed a database application using VB and SQL, which stores data of any internal/external incidents college students may have faced.
+									The application was developed for the Safeguarding Department of New City College, to improve the efficiency of how they store their data.
+								</p>
+							</article>
+							<article class="col-4 col-12-xsmall work-item">
+								<a href="https://github.com/syedur-r/Scary-Maze-Game/tree/main/Maze/Maze" target=”_blank” class="image fit thumb"><img src="images/thumbs/scary-maze-thumbnail.png" alt="" /></a>
 								<h3>Scary Maze Game</h3>
-								<p>Developed a scary maze game using VB.net. You have to reach the end of the maze without hitting any walls, and it must be done within 60 seconds.</p>
+								<p>
+									Developed a scary maze game using VB. The game consists of three levels, where the player has to reach the end of the maze without hitting any walls. 
+									This has to be done within 60 seconds. Once the player has successfully reached the end of the maze at the final level, it will trigger the jumpscare!
+								</p>
 							</article>
 						</div>
 					</section>
@@ -91,14 +172,5 @@
 					</ul>
 				</div>
 			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
